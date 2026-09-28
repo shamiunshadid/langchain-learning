@@ -1,0 +1,25 @@
+[project]
+name = "structured-output"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Shamiun Shadid", email = "shamiunshadid@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "langchain>=1.4.2",
+    "langchain-core>=1.6.4",
+    "langchain-groq>=1.1.3",
+    "langchain-openai>=1.6.5",
+    "openai>=3.19.2",
+    "pydantic[email]>=2.13.5",
+    "python-dotenv>=1.2.3",
+]
+
+[project.scripts]
+structured-output = "structured_output:main"
+
+[build-system]
+requires = ["uv_build>=0.12.19,<0.13.0"]
+build-backend = "uv_build"
